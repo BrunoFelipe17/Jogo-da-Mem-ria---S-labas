@@ -158,6 +158,7 @@ buttonPlayAgain.addEventListener('click', function() {
 function resetGame() {
     cards.forEach(function(card) {
         card.classList.remove('acertou');
+        card.children[0].classList.remove('remove_front')
     })
 }
 
