@@ -80,3 +80,49 @@
     /* z-index: -1; */
 }
 
+.scene-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    transition: display .5s;
+}
+
+.scene-3-background {
+    width: 100%;
+    height: 100vh;
+    background: #009d4d;
+    opacity: 0.8;
+}
+
+.background-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene-3-text {
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    z-index: 2;
+}
+
+.scene-3-text h2 {
+    font-size: 40px;
+}
+
+.jogar-novamente {
+    margin-top: 10px;
+    border: 1px solid #009d4d;
+    padding: 5px 2em;
+    text-transform: uppercase;
+}
