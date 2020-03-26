@@ -44,6 +44,11 @@
     z-index: 1;
 }
 
+.texto {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .align-center-flex {
     display: -webkit-box;
     display: -ms-flexbox;
