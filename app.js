@@ -137,6 +137,7 @@ function game() {
       ")"
     );
     imageTemp.dataset.number = "".concat(shuffledObject[iterator].number);
+    imageTemp.dataset.type = "".concat(shuffledObject[iterator].type);
     iterator++;
   }
 
@@ -174,7 +175,10 @@ function game() {
           imagemAtual = imageCard;
           frontAtual = frontCard;
         } else {
-          if (imageCard.dataset.number == imagemAtual.dataset.number) {
+          if (
+            imageCard.dataset.number == imagemAtual.dataset.number &&
+            imageCard.dataset.type != imagemAtual.dataset.type
+          ) {
             acertos += 1;
             card.classList.add("acertou");
             imagemAtual.parentElement.classList.add("acertou");
@@ -193,9 +197,10 @@ function game() {
             }, 1000);
           }
         }
-        if (acertos >= 5) {
+        if (acertos >= 10) {
           sceneWin.style.display = "block";
           palmas.play();
+          palmas.volume = 0.5;
         }
       }
     });
