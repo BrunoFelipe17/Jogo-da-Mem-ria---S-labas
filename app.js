@@ -208,6 +208,7 @@ function game() {
 }
 
 buttonPlayAgain.addEventListener("click", function () {
+  window.location.reload();
   acertos = 0;
   clicked = false;
   iterator = 0;
